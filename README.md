@@ -3,7 +3,7 @@
 Extensão de produtividade para desenvolvimento web com o **Antigravity IDE**. Permite que você clique em qualquer elemento ou selecione qualquer texto no navegador e abra o arquivo e a linha correspondente diretamente no Antigravity IDE, **sem precisar injetar ou alterar código em nenhum projeto**.
 
 <p align="center">
-  <img src="assets/preview.png" alt="Brandev Inspector em Ação" width="850">
+  <img src="assets/demo.gif" alt="Brandev Inspector em Ação" width="850">
 </p>
 
 ---
