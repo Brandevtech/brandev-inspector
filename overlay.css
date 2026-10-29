@@ -1,0 +1,66 @@
+/* Antigravity Dev Inspector Overlay Styles */
+
+#ag-inspector-overlay {
+  position: fixed;
+  pointer-events: none;
+  z-index: 2147483640;
+  border: 2px solid #00c3ff;
+  background-color: rgba(0, 195, 255, 0.15);
+  box-shadow: 0 0 12px rgba(0, 195, 255, 0.45);
+  border-radius: 4px;
+  transition: all 0.08s ease-out;
+  display: none;
+  box-sizing: border-box;
+}
+
+#ag-inspector-badge {
+  position: fixed;
+  pointer-events: none;
+  z-index: 2147483646;
+  background: #181c24;
+  color: #00d2ff;
+  border: 1px solid #00c3ff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  white-space: nowrap;
+  display: none;
+  transform: translateY(-100%);
+  transition: all 0.08s ease-out;
+}
+
+#ag-inspector-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 2147483647;
+  background: #1e222d;
+  color: #f1f5f9;
+  border: 1px solid #38bdf8;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 15px rgba(56, 189, 248, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+#ag-inspector-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#ag-inspector-toast .icon {
+  font-size: 16px;
+}

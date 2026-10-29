@@ -1,0 +1,10 @@
+# Logs
+*.log
+npm-debug.log*
+
+# OS and temporary files
+.DS_Store
+Thumbs.db
+
+# Packaged releases (optional, can be attached to GitHub Releases)
+*.zip
