@@ -11,8 +11,18 @@ const PROJECTS_BASE = process.env.PROJECTS_DIR || (fs.existsSync("S:\\DEVELOPER"
 
 // File extensions to search
 const SEARCH_EXTENSIONS = new Set([
-  ".php", ".phtml", ".html", ".htm", ".blade.php",
-  ".vue", ".js", ".ts", ".jsx", ".tsx", ".twig", ".tpl"
+  // Web & Frameworks
+  ".html", ".htm", ".vue", ".svelte", ".astro",
+  // JavaScript & TypeScript (React, Next, etc.)
+  ".js", ".jsx", ".ts", ".tsx",
+  // PHP & Templates
+  ".php", ".phtml", ".blade.php", ".twig", ".tpl",
+  // Java & JVM Templates
+  ".jsp", ".jspx", ".ftl", ".vm", ".java",
+  // .NET & C#
+  ".cshtml", ".razor",
+  // Python / Ruby Templates
+  ".jinja", ".jinja2", ".erb"
 ]);
 
 // Directories to ignore during scanning
